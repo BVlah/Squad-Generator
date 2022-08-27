@@ -178,12 +178,12 @@ const writeToFile = teamData => {
 
 addManager()
 .then(addEmployee)
-// .then(teamArr => {
-//     return generateHTML(teamArr);
-// })
-// .then(pageHTML => {
-//     return writeToFile(pageHTML);
-// })
-// .catch(err => {
-//     console.log(err);
-// });
+.then(teamArr => {
+    return generateHTML(teamArr);
+})
+.then(pageHTML => {
+    return writeToFile(pageHTML);
+})
+.catch(err => {
+    console.log(err);
+});
