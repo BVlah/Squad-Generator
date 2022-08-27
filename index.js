@@ -22,7 +22,7 @@ const addManager = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log("Please enter the Team Manager's Name!")
+                    console.log("Please enter the Team Manager's Name!");
                     return false;
                 };
             }
@@ -33,7 +33,7 @@ const addManager = () => {
             message: "Please enter the team manager's ID:",
             validate: idInput => {
                 if (isNaN(idInput)) {
-                    console.log("Please enter the Team Manager's ID!")
+                    console.log("Please enter the Team Manager's ID!");
                     return false;
                 } else {
                     return true;
@@ -60,7 +60,7 @@ const addManager = () => {
             message: "Please enter the team manager's office number:",
             validate: officeInput => {
                 if (isNaN(officeInput)) {
-                    console.log("Please enter the Team Manager's office number!")
+                    console.log("Please enter the Team Manager's office number!");
                     return false;
                 } else {
                     return true;
@@ -91,7 +91,7 @@ const addEmployee = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log("Please enter the Employee's Name!")
+                    console.log("Please enter the Employee's Name!");
                     return false;
                 };
             }
@@ -103,7 +103,7 @@ const addEmployee = () => {
             when: (answers) => answers.addMember !== 'Finish Building Team',
             validate: idInput => {
                 if (isNaN(idInput)) {
-                    console.log("Please enter the Employee's Name!")
+                    console.log("Please enter the Employee's ID!");
                     return false;
                 } else {
                     return true;
@@ -134,7 +134,7 @@ const addEmployee = () => {
                 if (githubInput) {
                     return true;
                 } else {
-                    console.log("Please enter the Employee's Github!")
+                    console.log("Please enter the Employee's Github!");
                     return false;
                 };
             }
@@ -148,7 +148,7 @@ const addEmployee = () => {
                 if (schoolInput) {
                     return true;
                 } else {
-                    console.log("Please enter the Employee's school!")
+                    console.log("Please enter the Employee's school!");
                     return false;
                 };
             }
@@ -160,7 +160,7 @@ const addEmployee = () => {
             teamArr.push(employee);
             return addEmployee(teamArr);
         } else if (employeeResponse.addMember === 'Intern') {
-            employee = new Intern(employeeResponse.name, employeeResponse.id, employeeResponse.email, employeeResponse.github);
+            employee = new Intern(employeeResponse.name, employeeResponse.id, employeeResponse.email, employeeResponse.school);
             teamArr.push(employee);
             return addEmployee(teamArr);
         } else {
