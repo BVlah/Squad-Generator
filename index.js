@@ -10,7 +10,7 @@ const teamArr = [];
 const addManager = () => {
     console.log(`
     ======================
-    Add your team Members!
+    Add your Team Members!
     ======================
     `);
     return inquirer.prompt([
